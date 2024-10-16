@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main()
+{
+  int a[8]={2,4,-6,-7,3,-2,1,-8};
+  int count = 0;
+  printf("Negative array index is: ");
+  for(int i=0;i<=8;i++)
+  {
+    if(a[i]<0)
+    {
+      printf("%d ",i);
+      count +=i;
+    }
+  }
+  printf("\ncount of negative array is: %d",count);
+}
