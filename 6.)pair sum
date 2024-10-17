@@ -1,0 +1,31 @@
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[6] = {1, 2, 4, 5, 7, 11};
+    int x = 9;
+    int sum=0;
+    int i=0,j=4;
+    while(sum<x){
+        sum = arr[i]+arr[j];
+        if(sum>x) {
+            j--;
+            
+        }
+        else{
+            i++;
+        }
+    }
+    if(sum==x)
+    {
+        cout<<"YES";
+        
+    }
+    else
+    {
+        cout<<"NO";
+        
+    }
+    return 0;
+}
