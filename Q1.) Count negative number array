@@ -9,7 +9,7 @@ void main()
     if(a[i]<0)
     {
       printf("%d ",i);
-      count +=i;
+      count +=1;
     }
   }
   printf("\ncount of negative array is: %d",count);
